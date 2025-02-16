@@ -21,7 +21,7 @@ resource "aws_security_group" "sg" {
 
 
 
-resource "aws_security_group" "Bastion" {
+resource "aws_security_group" "bastion" {
   name        = "${local.sgname}-bastion"
   description = "bastion host sg"
   vpc_id      = data.aws_ssm_parameter.vpc_id.value
