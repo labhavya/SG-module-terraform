@@ -14,7 +14,7 @@ resource "aws_security_group" "sg" {
     var.common_tags,
     var.sg_tags,
  {
-    Name = local.sgname
+    Name = "${local.sgname}-mysql"
   }
  )
 }
@@ -38,7 +38,7 @@ resource "aws_security_group" "bastion" {
     var.common_tags,
     var.sg_tags,
  {
-    Name = local.sgname
+    Name = "${local.sgname}-bastion"
   }
  )
 }
