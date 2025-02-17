@@ -22,8 +22,7 @@ variable sg_tags {
  }
 }
 
-variable "ssm_param_desc" {
-}
+
 
 
 variable "role_type" {
